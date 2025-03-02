@@ -14,7 +14,7 @@
 	"version": "1.0.0",
 	"description":  "A project that does something awesome",
 	"devDependencies": {},
-	"keywords": [ "descriptive", "related", "words"],
+	"keywords": [ "descriptive", "related", "words","freecodecamp"],
 	"author": "Aleksa Dragnic",
 	"license": "ISC",
 	"bugs": {
