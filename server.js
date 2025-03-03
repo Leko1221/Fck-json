@@ -21,9 +21,12 @@ if (!process.env.DISABLE_XORIGIN) {
   });
 }
 
-// Define a route for GET requests to "/"
+let path = require('path');        // Import 'path' module to handle file paths
+
+// Serve an HTML file at the root route "/"
 app.get("/", function(req, res) {
-  res.send("Hello Express");
+  let absolutePath = path.join(__dirname, "views", "index.html");  // Create absolute path
+  res.sendFile(absolutePath);  // Send the file as a response
 });
 
 const port = process.env.PORT || 3000;
