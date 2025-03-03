@@ -23,6 +23,8 @@ if (!process.env.DISABLE_XORIGIN) {
 
 let path = require('path');        // Import 'path' module to handle file paths
 
+app.use("/public", express.static(path.join(__dirname, "public")));
+
 // Serve an HTML file at the root route "/"
 app.get("/", function(req, res) {
   let absolutePath = path.join(__dirname, "views", "index.html");  // Create absolute path
